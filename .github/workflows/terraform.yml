@@ -75,7 +75,7 @@ jobs:
       working-directory: ${{ env.TF_WORKING_DIR }}/environments/dev
       
     - name: Upload Plan
-      uses: actions/upload-artifact@v5
+      uses: actions/upload-artifact@v6
       with:
         name: terraform-plan-dev
         path: ${{ env.TF_WORKING_DIR }}/environments/dev/tfplan
@@ -110,7 +110,7 @@ jobs:
       working-directory: ${{ env.TF_WORKING_DIR }}/environments/staging
       
     - name: Upload Plan
-      uses: actions/upload-artifact@v5
+      uses: actions/upload-artifact@v6
       with:
         name: terraform-plan-staging
         path: ${{ env.TF_WORKING_DIR }}/environments/staging/tfplan
@@ -145,7 +145,7 @@ jobs:
       working-directory: ${{ env.TF_WORKING_DIR }}/environments/prod
       
     - name: Upload Plan
-      uses: actions/upload-artifact@v5
+      uses: actions/upload-artifact@v6
       with:
         name: terraform-plan-prod
         path: ${{ env.TF_WORKING_DIR }}/environments/prod/tfplan
