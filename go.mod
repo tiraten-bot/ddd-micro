@@ -7,7 +7,7 @@ toolchain go1.24.9
 require (
 	github.com/IBM/sarama v1.46.3
 	github.com/gin-gonic/gin v1.11.0
-	github.com/golang-jwt/jwt/v5 v5.3.0
+	github.com/golang-jwt/jwt/v5 v5.3.1
 	github.com/google/uuid v1.6.0
 	github.com/google/wire v0.7.0
 	github.com/opentracing/opentracing-go v1.2.0
