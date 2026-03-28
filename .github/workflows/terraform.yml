@@ -173,7 +173,7 @@ jobs:
         aws-region: us-west-2
         
     - name: Download Plan
-      uses: actions/download-artifact@v7
+      uses: actions/download-artifact@v8
       with:
         name: terraform-plan-dev
         path: ${{ env.TF_WORKING_DIR }}/environments/dev
@@ -206,7 +206,7 @@ jobs:
         aws-region: us-west-2
         
     - name: Download Plan
-      uses: actions/download-artifact@v7
+      uses: actions/download-artifact@v8
       with:
         name: terraform-plan-prod
         path: ${{ env.TF_WORKING_DIR }}/environments/prod
